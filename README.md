@@ -12,12 +12,18 @@ https://www.vagrantup.com/
 
 - Clone the repo
 
+```
 $ git clone https://github.com/duduribeiro/ruby_vm.git
+```
 
 - Start the virtual machine
 
+```
 $ vagrant up
+```
 
 - After, you can access the VM :beers:
 
+```
 $ vagrant ssh
+```
