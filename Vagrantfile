@@ -22,6 +22,7 @@ Vagrant.configure('2') do |config|
     chef.cookbooks_path = 'cookbooks'
     chef.roles_path = 'roles'
     chef.provisioning_path = '/tmp/vagrant-chef'
+    chef.add_role('nodejs')
     chef.add_role('rvm')
     chef.add_role('postgres')
     chef.add_role('redis')

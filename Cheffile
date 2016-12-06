@@ -1,5 +1,6 @@
 site "https://supermarket.getchef.com/api/v1"
 
+cookbook 'nodejs', '~> 3.0.0'
 cookbook 'postgresql', '~> 5.1.0'
 cookbook 'redisio', '~> 2.5.0'
 cookbook 'rvm', '~> 0.9.4'

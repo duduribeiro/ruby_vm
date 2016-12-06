@@ -1,0 +1,13 @@
+{
+	"name": "Nodejs",
+	"description": "nodejs",
+	"json_class": "Chef::Role",
+	"chef_type": "role",
+	"run_list": [
+		"recipe[nodejs::default]"
+	],
+	"env_run_lists": {},
+	"default_attributes": {
+	},
+	"override_attributes": {}
+}
