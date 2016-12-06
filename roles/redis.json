@@ -1,0 +1,19 @@
+{
+	"name": "Redis",
+	"description": "sets up redis server",
+	"json_class": "Chef::Role",
+	"chef_type": "role",
+	"run_list": [
+    "recipe[redisio::default]",
+    "recipe[redisio::enable]"
+	],
+	"env_run_lists": {},
+	"default_attributes": {
+    "redisio": {
+      "servers": [
+        { "port": "6379" }
+      ]
+    }
+	},
+	"override_attributes": {}
+}

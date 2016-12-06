@@ -24,6 +24,7 @@ Vagrant.configure('2') do |config|
     chef.provisioning_path = '/tmp/vagrant-chef'
     chef.add_role('rvm')
     chef.add_role('postgres')
+    chef.add_role('redis')
 
     chef.add_recipe('rvm')
     chef.json = {

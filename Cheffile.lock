@@ -19,14 +19,19 @@ SITE
       apt (>= 1.9.0)
       build-essential (>= 2.0.0)
       openssl (>= 4.0)
+    redisio (2.5.0)
+      build-essential (>= 0.0.0)
+      ulimit (>= 0.1.2)
     rvm (0.9.4)
       chef_gem (>= 0.0.0)
     seven_zip (2.0.2)
       windows (>= 1.2.2)
+    ulimit (0.4.0)
     windows (2.1.1)
       ohai (>= 4.0.0)
 
 DEPENDENCIES
   postgresql (~> 5.1.0)
+  redisio (~> 2.5.0)
   rvm (~> 0.9.4)
 
