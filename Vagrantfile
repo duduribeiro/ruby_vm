@@ -23,6 +23,7 @@ Vagrant.configure('2') do |config|
     chef.roles_path = 'roles'
     chef.provisioning_path = '/tmp/vagrant-chef'
     chef.add_role('rvm')
+    chef.add_role('postgres')
 
     chef.add_recipe('rvm')
     chef.json = {

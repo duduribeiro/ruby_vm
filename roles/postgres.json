@@ -1,0 +1,23 @@
+{
+	"name": "Postgres",
+	"description": "sets up datbase server",
+	"json_class": "Chef::Role",
+	"chef_type": "role",
+	"run_list": [
+		"recipe[postgresql::server]",
+		"recipe[postgresql::ruby]"
+	],
+	"env_run_lists": {},
+	"default_attributes": {
+		"postgresql": {
+      "version": "9.5",
+      "password": {
+        "postgres": "postgres"
+      },
+      "pg_hba": [
+        {"type": "local", "db": "all", "user": "postgres", "method": "md5"}
+      ]
+		}
+	},
+	"override_attributes": {}
+}
