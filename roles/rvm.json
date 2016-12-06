@@ -1,0 +1,34 @@
+{
+	"name": "RVM",
+	"description": "sets up rvm with ruby",
+	"json_class": "Chef::Role",
+	"chef_type": "role",
+	"run_list": [
+		"recipe[rvm::system]"
+	],
+	"env_run_lists": {},
+	"default_attributes": {
+		"rvm": {
+			"default_ruby": "ruby-2.3.1-railsexpress",
+			"group_users": ["vagrant"],
+			"gpg": {
+				"keyserver": "hkp://keys.gnupg.net",
+				"homedir": "~/"
+			},
+			"install_rubies": true,
+			"vagrant": {
+				"system_chef_client": "/opt/chef/bin/chef-client",
+				"system_chef_solo": "/opt/chef/bin/chef-solo"
+			},
+			"global_gems": [{
+				"name": "bundle"
+			}],
+			"rvmrc": {
+				"rvm_project_rvmrc": 1,
+				"rvm_gemset_create_on_use_flag": 1,
+				"rvm_pretty_print_flag": 1
+			}
+		}
+	},
+	"override_attributes": {}
+}
